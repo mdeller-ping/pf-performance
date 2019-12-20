@@ -8,9 +8,9 @@ metadata:
 spec:
   replicas: 1
   selector:
-      matchLabels:
-        app: pf-cluster
-        tier: console
+    matchLabels:
+      app: pf-cluster
+      tier: console
   template:
     metadata:
       labels:
@@ -18,20 +18,22 @@ spec:
         tier: console
     spec:
       containers:
-      - name: console-node
-        image: gcr.io/ping-identity/pingfederate:10.0.0-Beta-centos-edge
-        ports:
-        - containerPort: 9999
-        resources:
-          requests:
-            memory: "1.5Gi"
-            cpu: "1"
-          limits:
-            memory: "1.5Gi"
-            cpu: "1"
-        envFrom:
-          - configMapRef:
-              name: console-variables
-          - secretRef:
-              name: devops-secret
-              optional: true
+        - name: console-node
+          image: gcr.io/ping-identity/pingfederate:10.0.0-Beta-centos-edge
+          ports:
+            - containerPort: 9999
+          resources:
+            requests:
+              memory: "1.5Gi"
+              cpu: "1"
+            limits:
+              memory: "1.5Gi"
+              cpu: "1"
+          envFrom:
+            - configMapRef:
+                name: console-variables
+            - configMapRef:
+                name: private-variables
+            - secretRef:
+                name: devops-secret
+                optional: true
