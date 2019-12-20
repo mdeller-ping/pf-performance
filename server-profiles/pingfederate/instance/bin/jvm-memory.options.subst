@@ -4,7 +4,6 @@
 -XX:MaxNewSize=3g
 -XX:+UseParallelGC
 -XX:+PrintGCDetails 
--XX:+PrintGCDateStamps
 -Xloggc:${LOG_LOCATION}/gc.log
 -XX:+UseGCLogFileRotation
 -XX:NumberOfGCLogFiles=2
