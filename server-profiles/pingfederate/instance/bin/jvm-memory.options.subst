@@ -1,0 +1,13 @@
+-Xms6g
+-Xmx6g
+-XX:NewSize=3g
+-XX:MaxNewSize=3g
+-XX:+UseParallelGC
+-XX:+PrintGCDetails 
+-XX:+PrintGCDateStamps
+-Xloggc:${LOG_LOCATION}/gc.log
+-XX:+UseGCLogFileRotation
+-XX:NumberOfGCLogFiles=2
+-XX:GCLogFileSize=10M
+-Dpf.log.dir=${LOG_LOCATION}
+

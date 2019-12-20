@@ -1,0 +1,15 @@
+apiVersion: v1
+data:
+  OPERATIONAL_MODE: CLUSTERED_CONSOLE
+  JETTY_THREADS_MIN: '25'
+  JETTY_THREADS_MAX: '75'
+  PF_DNS_PING_CLUSTER: _bind-port._tcp.pf-cluster-dns
+  PF_DNS_PING_NAMESPACE: ping-cloud-devops-eks-mdeller
+  PF_DNS_PING_RECORDTYPE: SRV
+  SERVER_PROFILE_PATH: server-profiles/pingfederate
+  SERVER_PROFILE_URL: https://github.com/mdeller-ping/tpc-poc.git
+  PING_IDENTITY_DEVOPS_USER: 
+  PING_IDENTITY_DEVOPS_KEY: 
+kind: ConfigMap
+metadata:
+  name: console-variables
