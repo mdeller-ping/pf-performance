@@ -40,26 +40,26 @@ spec:
             limits:
               memory: 1.5Gi
               cpu: "1"
-        - env:
-            - name: HOSTNAME
-              valueFrom:
-                fieldRef:
-                  fieldPath: spec.nodeName
-          envFrom:
-            - configMapRef:
-                name: telegraf-variables
-          image: docker.io/library/telegraf:1.9.5-alpine
-          name: telegraf
-          resources:
-            limits:
-              memory: 500Mi
-            requests:
-              cpu: 500m
-              memory: 500Mi
-          volumeMounts:
-            - mountPath: /etc/telegraf
-              name: telegraf-conf
-      volumes:
-        - configMap:
-            name: telegraf-conf
-          name: telegraf-conf
+#        - env:
+#            - name: HOSTNAME
+#              valueFrom:
+#                fieldRef:
+#                  fieldPath: spec.nodeName
+#          envFrom:
+#            - configMapRef:
+#                name: telegraf-variables
+#          image: docker.io/library/telegraf:1.9.5-alpine
+#          name: telegraf
+#          resources:
+#            limits:
+#              memory: 500Mi
+#            requests:
+#              cpu: 500m
+#              memory: 500Mi
+#          volumeMounts:
+#            - mountPath: /etc/telegraf
+#              name: telegraf-conf
+#      volumes:
+#        - configMap:
+#            name: telegraf-conf
+#          name: telegraf-conf
