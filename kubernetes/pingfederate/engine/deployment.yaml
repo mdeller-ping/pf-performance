@@ -19,6 +19,7 @@ spec:
         revision: init
     spec:
       containers:
+        - name: engine-node
         - envFrom:
             - configMapRef:
                 name: engine-variables
@@ -29,7 +30,6 @@ spec:
                 optional: true
             - configMapRef:
                 name: jolokia-variables
-          name: engine-node
           image: gcr.io/ping-identity/pingfederate:10.0.0-Beta-centos-edge
           ports:
             - containerPort: 9031

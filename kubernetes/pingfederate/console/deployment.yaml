@@ -16,20 +16,11 @@ spec:
       labels:
         app: pf-cluster
         tier: console
+        revision: init
     spec:
       containers:
-        - name: console-node
-          image: gcr.io/ping-identity/pingfederate:10.0.0-Beta-centos-edge
-          ports:
-            - containerPort: 9999
-          resources:
-            requests:
-              memory: "1.5Gi"
-              cpu: "1"
-            limits:
-              memory: "1.5Gi"
-              cpu: "1"
-          envFrom:
+      - name: console-node
+        - envFrom:
             - configMapRef:
                 name: console-variables
             - configMapRef:
@@ -37,3 +28,13 @@ spec:
             - secretRef:
                 name: devops-secret
                 optional: true
+          image: gcr.io/ping-identity/pingfederate:10.0.0-Beta-centos-edge
+          ports:
+            - containerPort: 9999
+          resources:
+            requests:
+              memory: 1.5Gi
+              cpu: "1"
+            limits:
+              memory: 1.5Gi
+              cpu: "1"
