@@ -35,8 +35,8 @@ kubectl logs -f pod/pingfederate-pod-id
 ## clean everything up
 
 ```
-k delete deployment.apps/pingfederate
-k delete service/pingfederate
-k delete secret devops-secret
-k delete configmap standalone-variables
+kubectl delete deployment.apps/pingfederate
+kubectl delete service/pingfederate
+kubectl delete secret devops-secret
+kubectl delete configmap standalone-variables
 ```
