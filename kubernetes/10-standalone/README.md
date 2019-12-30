@@ -32,6 +32,16 @@ kubectl get all
 kubectl logs -f pod/pingfederate-pod-id
 ```
 
+## get admin console
+
+```
+kubectl port-forward pod/pingfederate-pod-id 9999:9999
+```
+
+Point web browser to https://localhost:9999/pingfederate/app
+
+administrator / 2FederateM0re
+
 ## clean everything up
 
 ```
