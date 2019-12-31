@@ -10,7 +10,9 @@
      authentication, etc. For each item, the name of the item maps
      to the alias of a private key, and the value of the item is the
      password to that particular key.-->
-    <map name="DsigPrivateKeyPasswords"></map>
+    <map name="DsigPrivateKeyPasswords">
+        <item name="bx1p7bxbnn4ongylv79ia4mjs">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiWWh2YktDbGt6TSIsInZlcnNpb24iOiIxMC4wLjAuMTUifQ..808uGyS151F_TS5wQRk6pg.DprqpBxQ_VrKZ10IKfZPgzsJ-lOS3xKrvmCprvtZqz8.MPVZI5OTYi6ZCyiI41gA4A</item>
+    </map>
     <!--DSIG HSM Keystore information: name and password-->
     <item name="DsigHSMKeystoreName">ping-dsig.hsmks</item>
     <item name="DsigHSMKeystorePassword"/>
@@ -20,7 +22,7 @@
      authentication, etc. For each item, the name of the item maps
      to the alias of a private key and the value of the item is the
      password to that particular key-->
-    <map name="DsigHSMPrivateKeyPasswords"></map>
+    <map name="DsigHSMPrivateKeyPasswords"/>
     <!--SSL Keystore information: name and password-->
     <item name="SslKeystoreName">ping-ssl.jks</item>
     <item name="SslKeystorePassword"/>
@@ -31,7 +33,7 @@
      authentication, etc. For each item, the name of the item maps
      to the alias of a private key and the value of the item is the
      password to that particular key-->
-    <map name="SslPrivateKeyPasswords"></map>
+    <map name="SslPrivateKeyPasswords"/>
     <!--SSL HSM Keystore information: name and password-->
     <item name="SslHSMKeystoreName">ping-ssl.hsmks</item>
     <item name="SslHSMKeystorePassword"/>
@@ -42,7 +44,7 @@
      authentication, etc. For each item, the name of the item maps
      to the alias of a private key and the value of the item is the
      password to that particular key-->
-    <map name="SslHSMPrivateKeyPasswords"></map>
+    <map name="SslHSMPrivateKeyPasswords"/>
     <!--SSL Server Keystore information: name and password-->
     <item name="SslServerKeystoreName">ping-ssl-server.jks</item>
     <item name="SslServerKeystorePassword">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiWWh2YktDbGt6TSIsInZlcnNpb24iOiIxMC4wLjAuMTUifQ..-6ljb0On0fVcdc1opNox_Q.wK07E79keN1wsBGbkK1hfWHq-9tatXglZlJRMApFF8U.ghK975rzSHMBm9z-28DlFg</item>
@@ -66,7 +68,7 @@
          authentication, etc. For each item, the name of the item maps
          to the alias of a private key and the value of the item is the
          password to that particular key-->
-    <map name="SslServerHSMPrivateKeyPasswords"></map>
+    <map name="SslServerHSMPrivateKeyPasswords"/>
     <!--Truststore Keystore information: name and password-->
     <item name="TrustKeystoreName">ping-trust.jks</item>
     <item name="TrustKeystorePassword">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiWWh2YktDbGt6TSIsInZlcnNpb24iOiIxMC4wLjAuMTUifQ..KBaHrbEtDnePa2nnDfTHpQ.D3Kk2sQXxCkLE099RNWEXy_jy8zljOKus1EhwYB-y88.fua7FuVOfwoInzPN-B3WDA</item>
@@ -95,7 +97,7 @@
      authentication, etc. For each item, the name of the item maps
      to the alias of a private key, and the value of the item is the
      password to that particular key.-->
-    <map name="GeneralPrivateKeyPasswords"></map>
+    <map name="GeneralPrivateKeyPasswords"/>
     <!--General HSM keystore information: name and password-->
     <item name="GeneralHSMKeystoreName">ping-general.hsmks</item>
     <item name="GeneralHSMKeystorePassword"/>
@@ -106,5 +108,5 @@
      authentication, etc. For each item, the name of the item maps
      to the alias of a private key, and the value of the item is the
      password to that particular key.-->
-    <map name="GeneralHSMPrivateKeyPasswords"></map>
+    <map name="GeneralHSMPrivateKeyPasswords"/>
 </config>
