@@ -1,0 +1,33 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: jmeter
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: jmeter
+        company: PingIdentity
+      name: jmeter
+    spec:
+      containers:
+        - envFrom:
+            - configMapRef:
+                name: jmeter-variables
+          args:
+            - --nongui
+            - -t /opt/apache-jmeter/bin/Visitors.jmx
+            - -JthreadCount=1
+            - -JloopCount=1
+            - -JlogFile=/tmp/jmeter.jtl
+          image: pingidentity/apache-jmeter:edge
+          imagePullPolicy: Always
+          name: jmeter
+          resources:
+            limits:
+              cpu: 2
+              memory: 3Gi
+            requests:
+              cpu: 2
+              memory: 3Gi
