@@ -19,7 +19,7 @@ spec:
             - --nongui
             - -t /opt/apache-jmeter/bin/Visitors.jmx
             - -JthreadCount=1
-            - -JloopCount=1
+            - -JloopCount=500
             - -JlogFile=/tmp/jmeter.jtl
           image: pingidentity/apache-jmeter:edge
           imagePullPolicy: Always
