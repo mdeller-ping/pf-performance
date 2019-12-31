@@ -50,9 +50,9 @@
     <urn:Tables>
         <urn:Table name="Symmetric Keys"/>
         <urn:Table name="Certificates">
-            <urn:Row>
+            <urn:Row defaultRow="false">
                 <urn:Field name="Key ID">01</urn:Field>
-                <urn:Field name="Certificate">n3jp5pnonya2qstiy163nawos</urn:Field>
+                <urn:Field name="Certificate">ul7n9q2jjo1624qltbjez54al</urn:Field>
             </urn:Row>
         </urn:Table>
     </urn:Tables>

@@ -3,5 +3,4 @@
     <con:map name="IdpAuthnAdapterInstances">
         <con:item name="loginForm">com.pingidentity.adapters.htmlform.idp.HtmlFormIdpAuthnAdapter</con:item>
     </con:map>
-    <con:map name="IdpAdapterInstanceParents"/>
 </con:config>

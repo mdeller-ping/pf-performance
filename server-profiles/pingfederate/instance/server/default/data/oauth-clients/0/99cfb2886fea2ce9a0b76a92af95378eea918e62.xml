@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urn:Clients xmlns:urn="urn:pingidentity.com:pf:oauth:client">
-    <urn:Client client_id="authorizationCode" name="authorizationCode" logo="" persistentGrantExpirationTime="0" enabled="true" lastModified="2019-12-19T15:09:53.343Z" bypassApprovalPage="true" restrictScopes="false" jwksUri="" jwks="" clientAuthnType="NONE" enforceOneTimeJWT="false" isRequireSignedRequest="false">
+    <urn:Client client_id="authorizationCode" name="authorizationCode" logo="" persistentGrantExpirationTime="0" enabled="true" lastModified="2019-12-30T11:39:52.868-05:00" bypassApprovalPage="true" restrictScopes="false" jwksUri="" jwks="" clientAuthnType="NONE" enforceOneTimeJWT="false" isRequireSignedRequest="false">
         <urn:Description/>
         <urn:Grant type="refresh_token"/>
         <urn:Grant type="authorization_code"/>
