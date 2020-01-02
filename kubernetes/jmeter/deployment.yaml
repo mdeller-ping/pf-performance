@@ -18,7 +18,7 @@ spec:
           args:
             - --nongui
             - -t /opt/apache-jmeter/bin/Visitors.jmx
-            - -JthreadCount=10
+            - -JthreadCount=12
             - -JloopCount=50000
             - -JlogFile=/tmp/jmeter.jtl
           image: pingidentity/apache-jmeter:edge
