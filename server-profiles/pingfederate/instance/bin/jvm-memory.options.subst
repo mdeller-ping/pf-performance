@@ -9,8 +9,8 @@
 #Maximum heap size
 -Xmx${JVM_HEAP_MAX}
 #Minimum size for the Young Gen space
--XX:NewSize=256m
+-XX:NewSize=${JVM_NEW_SIZE}
 #Maximum size for the Young Gen space
--XX:MaxNewSize=512m
+-XX:MaxNewSize=${JVM_NEW_SIZE}
 #Use the parallel garbage collector
 -XX:+UseParallelGC

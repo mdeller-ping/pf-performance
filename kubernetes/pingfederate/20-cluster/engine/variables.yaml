@@ -1,9 +1,10 @@
 apiVersion: v1
 data:
-  JETTY_THREAD_MIN: "300" # available cpu cores * 25
-  JETTY_THREAD_MAX: "600" # avaliable cpu cores * 50
+  JETTY_THREAD_MIN: "144" # available cpu cores * 12
+  JETTY_THREAD_MAX: "300" # avaliable cpu cores * 25
   JVM_HEAP_MIN: "4096m"
   JVM_HEAP_MAX: "4096m"
+  JVM_NEW_SIZE: "2048m" # 50% of heap
   OPERATIONAL_MODE: CLUSTERED_ENGINE
   PF_DNS_PING_CLUSTER: _bind-port._tcp.pf-cluster-dns
   PF_DNS_PING_NAMESPACE: ping-cloud-devops-eks-mdeller
