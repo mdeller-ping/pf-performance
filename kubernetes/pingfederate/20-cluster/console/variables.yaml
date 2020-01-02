@@ -1,5 +1,7 @@
 apiVersion: v1
 data:
+  JETTY_THREAD_MIN: "10" # available cpu cores * 25
+  JETTY_THREAD_MAX: "200" # avaliable cpu cores * 50
   PF_DNS_PING_CLUSTER: _bind-port._tcp.pf-cluster-dns
   PF_DNS_PING_NAMESPACE: ping-cloud-devops-eks-mdeller
   PF_DNS_PING_RECORDTYPE: SRV
