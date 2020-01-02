@@ -3,7 +3,7 @@ data:
   JETTY_THREAD_MIN: "10" # available cpu cores * 12
   JETTY_THREAD_MAX: "200" # avaliable cpu cores * 25
   JVM_HEAP_MIN: "1024m"
-  JVM_HEAP_MAX: "1024mm"
+  JVM_HEAP_MAX: "1024m"
   JVM_NEW_SIZE: "512m" # 50% of heap
   PF_DNS_PING_CLUSTER: _bind-port._tcp.pf-cluster-dns
   PF_DNS_PING_NAMESPACE: ping-cloud-devops-eks-mdeller
