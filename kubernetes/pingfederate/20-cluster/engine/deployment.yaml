@@ -59,14 +59,14 @@ spec:
         - name: engine-node
           image: gcr.io/ping-identity/pingfederate:10.0.0-centos-edge-arno-update-10.0.0-b9851707
           ports:
-            - containerPort: 9999
+            - containerPort: 9031
           resources:
             requests:
-              memory: "1.5Gi"
-              cpu: "1"
+              memory: "8Gi"
+              cpu: "12"
             limits:
-              memory: "1.5Gi"
-              cpu: "1"
+              memory: "8Gi"
+              cpu: "12"
           envFrom:
             - configMapRef:
                 name: engine-variables
