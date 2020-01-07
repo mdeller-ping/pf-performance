@@ -9,3 +9,8 @@ dn: ou=people,${USER_BASE_DN}
 objectClass: top
 objectClass: organizationalUnit
 ou: people
+
+dn: ou=grants,${USER_BASE_DN}
+objectClass: top
+objectClass: organizationalUnit
+ou: grants
