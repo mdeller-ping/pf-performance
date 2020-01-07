@@ -11,6 +11,6 @@ generatorOptions:
   disableNameSuffixHash: true
 
 configMapGenerator:
-- name: pingdirectory-environment-variables
+- name: pingdirectory-variables
   envs:
     - env_vars

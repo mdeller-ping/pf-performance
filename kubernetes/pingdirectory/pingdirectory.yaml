@@ -42,7 +42,7 @@ spec:
             cpu: "2"
         envFrom:
         - configMapRef:
-            name: pingdirectory-environment-variables
+            name: pingdirectory-variables
         - secretRef:
             name: devops-secret
             optional: true
