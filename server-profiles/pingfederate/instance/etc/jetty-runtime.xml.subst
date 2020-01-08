@@ -398,6 +398,7 @@
                     <Item>
                         <Ref refid="Contexts" />
                     </Item>
+                    <!--
                     <Item>
                         <New id="RequestLog" class="org.eclipse.jetty.server.handler.RequestLogHandler">
                             <Set name="requestLog">
@@ -413,6 +414,7 @@
                             </Set>
                         </New>
                     </Item>
+                    -->
                 </Array>
             </Set>
         </New>
