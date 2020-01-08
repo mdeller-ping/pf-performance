@@ -113,58 +113,6 @@
                      filePattern="${sys:pf.log.dir}/audit.%d{yyyy-MM-dd}.log"
                      ignoreExceptions="false">
             <PatternLayout>
-                <!-- Uncomment this if you want to use UTF-8 encoding instead
-                    of system's default encoding. <charset>UTF-8</charset> -->
-
-                <!-- Available fields for ConversionPattern:
-                %d - transaction time
-                %X{event} - event
-                %X{subject} - user name
-                %X{ip} - client source IP
-                %X{app} - target application URL
-                %X{connectionid} - partner ID
-                %X{connectionname} - partner name
-                %X{virtualserverid} - virtual server ID
-                %X{protocol} - protocol (e.g. SAML20)
-                %X{host} - host
-                %X{role} - role (IdP, SP)
-                %X{status} - the status of the SSO request (success, failure, inprogress)
-                %X{localuserid} - SP local user ID (available only when account linking is used)
-                %X{attributes} - a list of all attributes
-                %X{trackingid} - tracking ID which is unique for a user session. It is used for debugging purposes in the server log
-                %X{sessiongroupid} - Internal ID for a group of persistent sessions associated with a single browser instance via the PF.PERSISTENT cookie. It is only set if the request has triggered session lookup.
-                %X{sri} - The session reference identifier (SRI) for the user, which can be passed to the session revocation API to revoke the user's sessions. It is only set if the request has triggered session lookup.
-                %X{pfversion} - PingFederate version
-                %X{adapterid} - adapter instance ID(s) that were invoked. You can also use authenticationsourceid (for IdP connections/adapters) or targetsessionid (for SP connections/adapters) to log adapters and connections that were invoked.
-                %X{authenticationsourceid} - This will be the IdP adapter ID(s), the IdP connection partner entity ID(s) or the local identity profile ID(s) that were invoked in an authentication flow. Multiple authentication sources will appear as an array, i.e. [adapter.idpadapter1, idpConnection.idpconn1, localIdentity.localidentityprofile1]
-                %X{validatorid} - ID of the Password Credentials Validator used
-                %X{targetsessionid} - For IdP connections' browser SSO, this will be the SP adapter ID(s) or the SP connection partner entity ID(s) that were invoked in an authentication/logout flow. Multiple target sessions will appear as an array, i.e. [spadapter1, spconn1]
-                %X{description} - description of failure
-
-                %X{assertionid} - ID from Assertion
-                %X{initiator} - Who initiated the SAML transaction (e.g.: SP)
-                %X{inmessagetype} - high level (protocol) message type
-                %X{inresponseto} - the InResponseTo attribute from the Response
-                %X{inxmlmsg} - the incoming XML message
-                %X{outxmlmsg} - the produced, outgoing XML message
-                %X{outurl} - URL where the protocol response was sent. For security, all query parameters and URL fragments are excluded.
-                %X{requestid} - ID of the original request
-                %X{responseid} - ID of the response
-
-                %X{accessgrantguid} - The GUID of the OAuth Access Grant
-                %X{attrackingid} - OAuth Access Token tracking ID. It is used to debug the flow of OAuth access tokens in the audit log and between PingFederate and PingAccess
-                %X{granttype} - OAuth grant type(s)
-
-                %X{stspluginid} - ID of the Token Processor / Token Generator used (STS only)
-
-                %X{requeststarttime} - start time of the request (milliseconds since midnight, January 1, 1970 UTC).
-                %X{responsetime} - time to process the request, in milliseconds
-                %X{authnsessionexpiry} - authentication session expiry
-
-                %header{a-header-name} - HTTP request header value for the given HTTP request header name
-                %parameter{parameter-name} - HTTP request parameter value for the given HTTP request parameter name
-                %trackedparameter{parameter-name} - Values for a configured tracked parameter that was stored at the start of the transaction
-                -->
                 <pattern>%d| %X{trackingid}| %X{event}| %X{subject}| %X{ip} | %X{app}| %X{connectionid}| %X{protocol}| %X{host}| %X{role}| %X{status}| %X{adapterid}| %X{description}| %X{responsetime} %n</pattern>
             </PatternLayout>
             <Policies>
