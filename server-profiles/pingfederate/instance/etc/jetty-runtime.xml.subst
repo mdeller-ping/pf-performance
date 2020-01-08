@@ -388,6 +388,7 @@
          </Call>
     </New>
 
+    <!--
     <Set name="handler">
         <New id="Handlers" class="org.eclipse.jetty.server.handler.HandlerCollection">
             <Set name="handlers">
@@ -417,6 +418,7 @@
             </Set>
         </New>
     </Set>
+    -->
 
     <!-- Enable JMX request statistics -->
     <Get id="oldhandler" name="handler" />
