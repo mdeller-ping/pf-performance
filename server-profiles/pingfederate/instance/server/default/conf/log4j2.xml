@@ -108,6 +108,7 @@
         </RollingFile>
         -->
 
+        <!--
         <RollingFile name="SecurityAudit2File" fileName="${sys:pf.log.dir}/audit.log"
                      filePattern="${sys:pf.log.dir}/audit.%d{yyyy-MM-dd}.log"
                      ignoreExceptions="false">
@@ -172,6 +173,7 @@
             </Policies>
             <DefaultRolloverStrategy max="5" />
         </RollingFile>
+        -->
 
         <!-- Admin Audit log : A time/date based rolling appender -->
         <RollingFile name="AdminAudit" fileName="${sys:pf.log.dir}/admin.log"
