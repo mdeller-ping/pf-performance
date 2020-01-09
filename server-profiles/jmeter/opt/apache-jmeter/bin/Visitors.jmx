@@ -16,7 +16,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="pingfederate_host" elementType="Argument">
             <stringProp name="Argument.name">pingfederate_host</stringProp>
-            <stringProp name="Argument.value">${__P(hostname,'pf-engine-lb')}</stringProp>
+            <stringProp name="Argument.value">${__P(hostname,pf-engine-lb)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="pingfederate_port" elementType="Argument">
