@@ -21,13 +21,15 @@ spec:
             - -JthreadCount=12
             - -JloopCount=50000
             - -JlogFile=/tmp/jmeter.jtl
+            - -Jhostname=pf-engine-lb
+            - -Jport=443
           image: pingidentity/apache-jmeter:edge
           imagePullPolicy: Always
           name: jmeter
           resources:
             limits:
-              cpu: 4
+              cpu: 2
               memory: 6Gi
             requests:
-              cpu: 4
+              cpu: 2
               memory: 6Gi
