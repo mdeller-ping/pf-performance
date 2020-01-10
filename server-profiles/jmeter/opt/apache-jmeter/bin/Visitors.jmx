@@ -34,11 +34,6 @@
             <stringProp name="Argument.value">authorizationCode</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="threadCount" elementType="Argument">
-            <stringProp name="Argument.name">threadCount</stringProp>
-            <stringProp name="Argument.value">${__P(threadCount,1)}</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -48,7 +43,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">${__P(loopCount,1)}</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">threadCount</stringProp>
+        <stringProp name="ThreadGroup.num_threads">${__P(threadCount,1)}</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${__P(rampUp,0)}</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration">${__P(duration,10)}</stringProp>
@@ -466,6 +461,11 @@
               <elementProp name="eventTags" elementType="Argument">
                 <stringProp name="Argument.name">eventTags</stringProp>
                 <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="threadCount" elementType="Argument">
+                <stringProp name="Argument.name">threadCount</stringProp>
+                <stringProp name="Argument.value">${__P(threadCount,1)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
