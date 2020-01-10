@@ -431,12 +431,12 @@
               </elementProp>
               <elementProp name="influxdbUrl" elementType="Argument">
                 <stringProp name="Argument.name">influxdbUrl</stringProp>
-                <stringProp name="Argument.value">http://influxdb:8086/write?db=jmeter_tpc</stringProp>
+                <stringProp name="Argument.value">http://influx-influxdb.tick.svc.cluster.local:8086/write?db=jmeter_tpc</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="application" elementType="Argument">
                 <stringProp name="Argument.name">application</stringProp>
-                <stringProp name="Argument.value">${__P(applicationName,jmeter-pod)}</stringProp>
+                <stringProp name="Argument.value">${__P(applicationName,jmeter)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="measurement" elementType="Argument">
